@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
-import Scroll from '../components/Scroll';
+// import Scroll from '../components/Scroll';
 import Header from '../components/Header';
 import './App.css';
 import { requestRobots, setSearchField } from '../actions';
@@ -40,9 +40,9 @@ class App extends Component {
         <div className='tc'>
           <Header />
           <SearchBox searchChange={onSearchChange} />
-          <Scroll>
+          {/* <Scroll> */}
             <CardList robots={filteredRobots} />
-          </Scroll>
+          {/* </Scroll> */}
         </div>
       );
   }
